@@ -30,7 +30,7 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
     // See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
 
     // The encrypted Table ID of your Fusion Table (found under File => About)
-    MapsLib.fusionTableId = "13xmU6wANRJb0Niqcdz5Tr0xWh4AyV0yN10xMxPc";
+    MapsLib.fusionTableId = "1KmjWSoaw4Sa89ZJhlgX044kjONbJAuR1HnhVjX8I";
 
     // *New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
     // *Important* this key is for demonstration purposes. please register your own.
@@ -237,11 +237,11 @@ $.extend(MapsLib, {
     ////////////////////////
     // 4. MAP PREFERENCES //
     ////////////////////////
-
+locationColumn:  "latitude",
 /*
     // Override the location column in your Fusion Table (useful if you have multiple columns)
     // NOTE: if you have "latitude" and "longitude" columns, just use "latitude"
-    //locationColumn:  "latitude",
+    locationColumn:  "latitude",
 
     // Center and zoom radius that your map defaults to when location services are off.
     // If useDefaultMapBounds is true (see section 2), this also determines which addresses get priority with autocomplete
