@@ -159,6 +159,7 @@ $.extend(MapsLib, {
 
     // Contents of the About Page.  You can use "{title}" to insert your title. */
     aboutPage: "<a href='elderbot-test.html' target='_blank'>Sample landing page</a>",
+    
 /*
     // If you already customized your marker styles and infoboxes within the Fusion Table,
     // you can use them by setting the style and template IDs here.
