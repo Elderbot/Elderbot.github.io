@@ -146,7 +146,8 @@ $.extend(MapsLib, {
         //     { label: "Last Inspected", type: "datepicker", column: "last_inspection_date"},
         // ],
     },
-
+//
+//
 
     ///////////////////////
     // 3. CUSTOM CONTENT //
