@@ -46,7 +46,7 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
 
 $.extend(MapsLib, {
 
-/*
+
 
     ////////////////////////
     // 2. SEARCH SETTINGS //
@@ -125,22 +125,8 @@ $.extend(MapsLib, {
             ["1/2 mile", ".5 miles"], 
             ["1 mile"], 
             ["2 miles"] ]
-        },
-        columns: [ 
-            { label: "Rating Filter", type: "dropdown", entries: [
-                ["Any Rating", "'last_score' > 0", true],
-                ["Good", "'last_score' > 90"],
-                ["Adequate", "'last_score' > 85 AND 'last_score' <= 90"],
-                ["Needs Improvement", "'last_score' > 70 AND 'last_score' <= 85"],
-                ["Poor", "'last_score' <= 70 AND 'last_score' > 0"]
-            ] },
-            { label: "Name", type: "text", column: "name"},
-            { label: "Violations", type: "text", column: "violations"},
-            { label: "Score", type: "slider", column: "last_score", min: 0, max: 100},
-            { label: "Last Inspected", type: "datepicker", column: "last_inspection_date"},
-        ],
+        }
     },
-*/
 
 
     ///////////////////////
@@ -238,6 +224,25 @@ $.extend(MapsLib, {
     // 4. MAP PREFERENCES //
     ////////////////////////
 locationColumn:  "latitude",
+
+    defaultMapBounds: {
+
+        // Use [latitude, longitude] or address
+
+            center: "Philadelphia, PA",
+
+
+
+        // "X miles" or "X meters"
+        radius: "6 miles"
+    },
+
+
+
+
+
+
+    
 /*
     // Override the location column in your Fusion Table (useful if you have multiple columns)
     // NOTE: if you have "latitude" and "longitude" columns, just use "latitude"
@@ -248,7 +253,10 @@ locationColumn:  "latitude",
     defaultMapBounds: {
 
         // Use [latitude, longitude] or address
-        center: "San Francisco, CA",
+
+            center: "Philadelphia, PA",
+
+
 
         // "X miles" or "X meters"
         radius: "6 miles"
